@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.learnning.timeutil.MainActivity">
+    <!--版本问题需要加
+     android:datePickerMode="spinner"
+     否则onDateChanged事件无法响应-->
+
+    <DatePicker
+        android:id="@+id/DatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:layout_weight="1"
+        android:datePickerMode="spinner" />
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:timePickerMode="spinner" />
+
+</LinearLayout>
